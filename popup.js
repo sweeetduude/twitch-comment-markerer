@@ -23,3 +23,4 @@ function bindStorage(name) {
 
 bindStorage('endpointUrl');
 bindStorage('channel');
+bindStorage('mod');
