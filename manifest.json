@@ -1,0 +1,29 @@
+{
+    "author": "AngeloMichel",
+    "name": "Twitch Chat Markerer",
+    "description": "Mark a chat in twitch chat and send it to your service!",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+          "matches": [
+            "<all_urls>"
+          ],
+          "js": ["script.js"]
+        }
+      ],
+    "permissions": [
+        "activeTab",
+        "storage",
+        "scripting"
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "icons": {
+        "128": "/images/markerer128.png"
+    },
+    "host_permissions": [
+        "https://*.twitch.tv/"
+    ]
+}
